@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+ <head>
+    <meta charset='UTF-8'>
+    <title>GETAPR Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+ </head>
+  <body>
+      <div class="container">                 
+          <div class="navwrapper">            
+              <div class="leftside">                 
+                  <div class="link-wrapper active-nav-link">       
+                       <a href= "index.html">Home</a>
+                  </div>
+                  <div class="link-wrapper">       
+                       <a href= "about.html">About</a>
+                  </div>
+              </div>
+              <div class="rightside">               
+                 <div class="brand">             
+                      <div>GET A PR</div>
+                 </div>
+              </div>
+         </div>
+          <div class="contentwrapper">
+               <div class="portfolioitemswrapper">
+                   <div class ="portfolioitemwrapper">
+                       <div class="portfolio-img-background" style="background-image:url(images/forwebsite.jpg)"></div> 
+                       <div class="img-text-wrapper">
+                          <div class="logo-wrapper">
+                               <img src="images/logos/download.jpg" alt="">
+                          </div>
+                          <div class ="subtitle">
+                              Visit us for Migration Pruposes.
+                          </div>  
+                       </div>
+                   </div>
+                   <div class ="portfolioitemwrapper">
+                       <div class="portfolio-img-background" style="background-image:url(images/forwebsite.jpg)"></div> 
+                       <div class="img-text-wrapper">
+                          <div class="logo-wrapper">
+                                <img src="images/logos/download.jpg" alt="">
+                          </div>
+                          <div class ="subtitle">
+                             Visit us for Migration Pruposes.
+                          </div>  
+                       </div>
+                   </div>
+                   <div class ="portfolioitemwrapper">
+                       <div class="portfolio-img-background" style="background-image:url(images/forwebsite.jpg)"></div> 
+                       <div class="img-text-wrapper">
+                           <div class="logo-wrapper">
+                                <img src="images/logos/download.jpg" alt="">
+                           </div>
+                           <div class ="subtitle">
+                               Visit us for Migration Pruposes.
+                           </div>  
+                       </div>
+                   </div>
+                   <div class ="portfolioitemwrapper">
+                       <div class="portfolio-img-background" style="background-image:url(images/forwebsite.jpg)"></div> 
+                       <div class="img-text-wrapper">
+                          <div class="logo-wrapper">
+                             <img src="images/logos/download.jpg" alt="">
+                          </div>
+                          <div class ="subtitle">
+                             Visit us for Migration Pruposes.
+                          </div>  
+                       </div>
+                   </div>
+                   <div class ="portfolioitemwrapper">
+                       <div class="portfolio-img-background" style="background-image:url(images/forwebsite.jpg)"></div> 
+                       <div class="img-text-wrapper">
+                         <div class="logo-wrapper">
+                             <img src="images/logos/download.jpg" alt="">
+                         </div>
+                         <div class ="subtitle">
+                             Visit us for Migration Pruposes.
+                         </div>  
+                       </div>
+                   </div>
+                   <div class ="portfolioitemwrapper">
+                       <div class="portfolio-img-background" style="background-image:url(images/forwebsite.jpg)"></div> 
+                       <div class="img-text-wrapper">
+                         <div class="logo-wrapper">
+                             <img src="images/logos/download.jpg" alt="">
+                         </div>
+                         <div class ="subtitle">
+                             Visit us for Migration Pruposes.
+                         </div>  
+                       </div>
+                   </div>
+                   <div class ="portfolioitemwrapper">
+                       <div class="portfolio-img-background" style="background-image:url(images/forwebsite.jpg)"></div> 
+                       <div class="img-text-wrapper">
+                         <div class="logo-wrapper">
+                             <img src="images/logos/download.jpg" alt="">
+                         </div>
+                         <div class ="subtitle">
+                             Visit us for Migration Pruposes.
+                         </div>  
+                       </div>
+                   </div>
+                   <div class ="portfolioitemwrapper">
+                       <div class="portfolio-img-background" style="background-image:url(images/forwebsite.jpg)"></div> 
+                       <div class="img-text-wrapper">
+                         <div class="logo-wrapper">
+                             <img src="images/logos/download.jpg" alt="">
+                         </div>
+                         <div class ="subtitle">
+                             Visit us for Migration Pruposes.
+                         </div>  
+                       </div>
+                   </div>
+                   <div class ="portfolioitemwrapper">
+                       <div class="portfolio-img-background" style="background-image:url(images/forwebsite.jpg)"></div> 
+                       <div class="img-text-wrapper">
+                         <div class="logo-wrapper">
+                             <img src="images/logos/download.jpg" alt="">
+                         </div>
+                         <div class ="subtitle">
+                             Visit us for Migration Pruposes.
+                         </div>  
+                       </div>
+                   </div>
+              </div>
+          </div>
+     </div>
+  </body>
+  <script>
+     const portfolioItems = document.querySelectorAll('.portfolioitemwrapper');
+  
+     portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+        });
+       });
+  </script>
+</html>
